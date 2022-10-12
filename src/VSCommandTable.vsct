@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <Extern href="stdidcmd.h"/>
+  <Extern href="vsshlids.h"/>
+  <Include href="KnownImageIds.vsct"/>
+  <Include href="VSGlobals.vsct"/>
+
+  <Commands package="CopyNice">
+    <Buttons>
+      <Button guid="CopyNice" id="Toggle" priority="0x0105" type="Button">
+        <Parent guid="VSEditor" id="Edit.LanguageInfoGroup.Advanced.CommandsGroup"/>
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <Strings>
+          <ButtonText>Strip Leading Whitespace on Copy</ButtonText>
+          <LocCanonicalName>.CopyNice.Toggle</LocCanonicalName>
+        </Strings>
+      </Button>
+    </Buttons>
+  </Commands>
+
+  <VisibilityConstraints>
+    <VisibilityItem guid="CopyNice" id="Toggle" context="GUID_TextEditorFactory" />
+  </VisibilityConstraints>
+
+  <Symbols>
+    <GuidSymbol name="CopyNice" value="{4edff1b5-8035-42c4-b298-724cbf9d9e13}">
+      <IDSymbol name="Toggle" value="0x0100" />
+    </GuidSymbol>
+  </Symbols>
+</CommandTable>
