@@ -17,6 +17,10 @@
     {
       "pathOnDisk": "art/paste-good.png",
       "targetPath": "art/paste-good.png"
+    },
+    {
+      "pathOnDisk": "art/menu.png",
+      "targetPath": "art/menu.png"
     }
   ],
   "overview": "README.md",

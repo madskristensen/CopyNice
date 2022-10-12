@@ -33,6 +33,7 @@ For Visual Studio to correctly identify when to strip indentation, these conditi
 
 This makes sure that what you copy is always what you expect. But in case you want to disable this feature, you can of course do that from the **Edit -> Advanced -> Strip Leading Whitespace on Copy** command.
 
+![Menu](art/menu.png)
 
 ## How can I help?
 If you enjoy using the extension, please give it a ★★★★★ rating on the [Visual Studio Marketplace][marketplace].
