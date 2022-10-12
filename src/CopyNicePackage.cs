@@ -14,10 +14,14 @@ namespace CopyNice
     [Guid(PackageGuids.CopyNiceString)]
     [ProvideAutoLoad(VSConstants.VsEditorFactoryGuid.TextEditor_string, PackageAutoLoadFlags.BackgroundLoad)]
     public sealed class CopyNicePackage : ToolkitPackage
-    {
+    {        
         protected override async Task InitializeAsync(CancellationToken cancellationToken, IProgress<ServiceProgressData> progress)
         {
             await this.RegisterCommandsAsync();
+
+            RatingPrompt rating = new("Madskristensen.CopyNice", Vsix.Name, await GeneralOptions.GetLiveInstanceAsync(), 20);
+            rating.RegisterSuccessfulUsage();
+            await rating.PromptAsync();
         }
     }
 }

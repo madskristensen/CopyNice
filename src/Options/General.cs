@@ -1,11 +1,12 @@
 ﻿using System.ComponentModel;
-using System.Runtime.InteropServices;
 
 namespace CopyNice
 {
-    public class GeneralOptions : BaseOptionModel<GeneralOptions>
+    public class GeneralOptions : BaseOptionModel<GeneralOptions>, IRatingConfig
     {
         [DefaultValue(true)]
         public bool Enabled { get; set; } = true;
+
+        public int RatingRequests { get; set; }
     }
 }
