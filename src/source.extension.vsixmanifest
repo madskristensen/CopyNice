@@ -5,9 +5,11 @@
         <DisplayName>Copy Nice</DisplayName>
         <Description xml:space="preserve">Strips leading indentation when copying to the clipboard. This fixes the issue of tangled code when pasting code into an email, IM, or elsewhere.</Description>
         <MoreInfo>https://github.com/madskristensen/CopyNice</MoreInfo>
+        <License>Resources\LICENSE</License>
         <Icon>Resources\Icon.png</Icon>
         <PreviewImage>Resources\Icon.png</PreviewImage>
         <Tags>copy, paste, formatting, clipboard</Tags>
+        <Preview>true</Preview>
     </Metadata>
     <Installation>
         <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0, 18.0)">

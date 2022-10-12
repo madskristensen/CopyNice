@@ -1,33 +1,25 @@
 {
   "$schema": "http://json.schemastore.org/vsix-publish",
-  "categories": [ "coding" ],
+  "categories": [ "coding", "documentation", "team development" ],
   "identity": {
-    "internalName": "RainbowBraces",
-    "tags": [ "color", "braces", "brackets" ]
+    "internalName": "CopyNice",
+    "tags": [ "copy", "paste", "formatting", "clipboard" ]
   },
   "assetFiles": [
     {
-      "pathOnDisk": "art/screenshot.png",
-      "targetPath": "art/screenshot.png"
+      "pathOnDisk": "art/selection.png",
+      "targetPath": "art/selection.png"
     },
     {
-      "pathOnDisk": "art/options.png",
-      "targetPath": "art/options.png"
+      "pathOnDisk": "art/paste-bad.png",
+      "targetPath": "art/paste-bad.png"
     },
     {
-      "pathOnDisk": "art/options2.png",
-      "targetPath": "art/options2.png"
-    },
-    {
-      "pathOnDisk": "art/menu.png",
-      "targetPath": "art/menu.png"
-    },
-    {
-      "pathOnDisk": "art/theme-colors.png",
-      "targetPath": "art/theme-colors.png"
+      "pathOnDisk": "art/paste-good.png",
+      "targetPath": "art/paste-good.png"
     }
   ],
   "overview": "README.md",
   "publisher": "MadsKristensen",
-  "repo": "https://github.com/MadsKristensen/RainbowBraces"
+  "repo": "https://github.com/MadsKristensen/CopyNice"
 }
