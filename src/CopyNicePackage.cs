@@ -19,7 +19,7 @@ namespace CopyNice
         {
             await this.RegisterCommandsAsync();
 
-            RatingPrompt rating = new("Madskristensen.CopyNice", Vsix.Name, await GeneralOptions.GetLiveInstanceAsync(), 20);
+            RatingPrompt rating = new("Madskristensen.CopyNice", Vsix.Name, await GeneralOptions.GetLiveInstanceAsync());
             rating.RegisterSuccessfulUsage();
             await rating.PromptAsync();
         }
