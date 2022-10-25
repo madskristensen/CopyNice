@@ -21,7 +21,6 @@ namespace CopyNice
 
             RatingPrompt rating = new("Madskristensen.CopyNice", Vsix.Name, await GeneralOptions.GetLiveInstanceAsync());
             rating.RegisterSuccessfulUsage();
-            await rating.PromptAsync();
         }
     }
 }
